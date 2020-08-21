@@ -37,7 +37,14 @@ for i in list1:
     print(i)
 
 
-# In[ ]:
+#method2
+import ast
+input_str = input()
+input_list = ast.literal_eval(input_str)
+lis=input_list[0]
+k=input_list[1] #chunks
+for i in range(0,len(lis),k): #preparing a step to give starting values of i for each chunk. eg. for k=5, it will return i=0 & 5
+    print(lis[i:i+k])
 
 
 
